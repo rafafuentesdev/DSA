@@ -10,3 +10,15 @@ class LinkedList:
         self.head = new_node
         self.tail = new_node
         self.length = 1
+
+    def append(self, value):
+        pass
+
+    def prepend(self, value):
+        pass
+
+    def insert(self, index, value):
+        pass
+
+    def print_list(self):
+        pass
