@@ -41,7 +41,15 @@ class LinkedList:
         return temp
 
     def prepend(self, value):
-        pass
+        new_node = Node(value)
+        if self.length == 0:
+            self.head = new_node
+            self.tail = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+        self.length += 1
+        return True
 
     def insert(self, index, value):
         pass
@@ -55,4 +63,9 @@ class LinkedList:
 
 my_linked_list = LinkedList(1)
 my_linked_list.append(2)
+my_linked_list.pop()
+my_linked_list.pop()
+
+my_linked_list.prepend(3)
+my_linked_list.prepend(4)
 my_linked_list.print_list()
