@@ -21,4 +21,11 @@ class LinkedList:
         pass
 
     def print_list(self):
-        pass
+        temp = self.head
+        while temp:
+            print(temp.value)
+            temp = temp.next
+
+
+my_linked_list = LinkedList(4)
+my_linked_list.print_list()
